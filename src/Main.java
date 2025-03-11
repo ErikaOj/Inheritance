@@ -9,7 +9,7 @@ public class Main {
 
         PaymentStrategy creditCard = new CreditCardPayment("1234-5678-9101-1121", "Avarmsh");
         PaymentStrategy paypal = new PayPalPayment("ErikaOj@gmail.com");
-        PaymentStrategy bitcoin = new CryptoPayment("HEHEHEHEHE");
+        PaymentStrategy crypto = new CryptoPayment("HEHEHEHEHE");
 
         customer1.displayCustomerInfo();
         customer2.displayCustomerInfo();
@@ -17,9 +17,9 @@ public class Main {
 
         customer1.makePayment(creditCard, 99999);
         customer2.makePayment(paypal, 88888);
-        customer3.makePayment(bitcoin, 989898);
+        customer3.makePayment(crypto, 989898);
 
-        customer1.makePayment(bitcoin, 77777);
+        customer1.makePayment(crypto, 77777);
         customer2.makePayment(creditCard, 66666);
         customer3.makePayment(paypal, 767676);
 
